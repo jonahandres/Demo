@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Det store spørsmålet</title>
+    <script>
+        function displayRandomMessage() {
+            const messages = ["Ja, det har vi faktisk", "Nei, det har vi ikke"];
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            const message = messages[randomIndex];
+            document.getElementById('message').innerText = message;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="displayRandomMessage()">Har vi mer potetgull?</button>
+    <p id="message"></p>
+</body>
+</html>
